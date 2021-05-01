@@ -1,0 +1,212 @@
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.tolbar{
+    width: 100%;
+    height: 9vh;
+    background-color: #ffff;   
+    display: flex;
+    border-bottom:1px#ccc solid;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    
+}
+.tolbar img {
+    width: 6.5rem;
+    height:2rem;
+    margin-left: 15%;  
+}
+
+.container-main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-child{
+    width: 350px;
+    height: 100%;
+    margin-top:7rem;
+    border: solid #ccc 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-cadeado{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin:1rem 0rem 1rem;
+    width: 100px;
+    height: 100px;
+    border: 2px black solid;
+    border-radius: 50%;   
+}
+.meia-lua{
+    width: 28px;
+    height: 20px;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-radius: 50% 50% 0% 0% ;
+    font-weight: bold;
+}
+.quadrado{
+    width: 45px;
+    height: 32px;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+.p-texto{
+    padding: 0.5rem 2.4rem 0.5rem 2.4rem;
+    text-align: center;
+}
+.formulario{
+    width: 100%;
+    padding:0.5rem 2.4rem 0.5rem 2.4rem;    
+}
+
+    
+.campo{
+    border: 1px #ccc solid;
+    border-radius: 3px;
+    outline: none;  
+    font-size: 72%;
+    width: 100%;
+    height: 38px;
+    padding-left: 4%;
+}
+    
+.button{
+    margin-top: 1rem;
+    background-color: rgb(166,234, 247);
+    color: bisque;
+    width: 100%;
+    height: 2rem;
+    padding-left: 4%;
+    outline: none;
+}
+
+h3{
+    font-size: 0.9rem;
+}
+.p-texto{
+color: rgba(0,0,0, 0.5);
+font-size: 82%;
+
+
+}
+.alternative{
+    margin: 1rem 0rem;
+    position: relative;
+}
+.alternative span{
+  font-weight: 400;
+  font-size: 80%;
+  color: rgba(0,0,0, 0.5);
+ 
+}
+
+.alternative span::before{
+    content: "";
+    width: 8.2rem;
+    height: 1px;
+    background-color: #cccc;
+    position: absolute;
+    left: 2rem;
+    bottom: 50%;
+}
+
+.alternative span::after{
+ content: "";
+ width: 8.2rem;
+ height: 1px;
+ background-color: #ccc;
+ position: absolute;
+ right: 2rem;
+ bottom: 50%;
+}
+h4{
+    font-size: 82%;
+    color: rgba(0,0,0, 0.8);
+    margin-bottom: 4rem;
+    cursor: pointer;
+}
+
+
+.voltar-login{
+    width: 350px;
+    margin-bottom: 1rem;
+    border: 1px #ccc solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.voltar-login a{
+
+    font-size: 82%;
+    font-weight: bold;
+    color: rgba(0,0,0, 0.8);
+    text-decoration: none;
+    padding:1rem 0rem; 
+    
+}
+.footer{
+    margin: 3rem 0rem
+}
+.list-footer{
+  display: flex;  
+}
+.list-footer li a {
+    font-size: 72%;
+text-decoration: none;
+color: rgb(168,161, 161);
+padding: 0rem 0.5rem;
+}
+.footer ul li {
+    list-style: none;
+}
+.p-footer{
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.p-footer p{
+    list-style: none;
+    padding: 0.5rem;
+}
+.p-footer p a{
+    text-decoration: none;
+    font-size: 72%;
+    color:rgb(168,161, 161);
+    text-align: center;
+}
+
+/*media queres*/
+
+@media screen and (max-width:660px){
+    .footer ul{
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: center;
+        
+    }
+
+}
+
+@media  screen and(max-width:340px) {
+    .p-footer {
+        font-size: 62%;
+    }
+}
