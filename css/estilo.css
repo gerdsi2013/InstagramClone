@@ -16,22 +16,47 @@
     background-color: #f7f3f3;
 }
 
+
+/*estilizando o slide*/
+
+.slide-carrosel{
+    width: 53%;
+    height: 69%;
+    border: 1px solid black;
+    animation: slide 10s infinite;
+    animation-direction:  alternate;
+}
+
+@keyframes slide {
+    0% , 20%{
+      background-image: url(/img/photo1.jpg);
+    }
+    25% ,50%{
+     background-image: url(/img/photo2.jpg);
+    }
+    55% , 75%{
+    background-image: url(/img/photo3.jpg);
+    }
+    80% , 100%{
+        background-image: url(/img/photo4.jpg);
+    }
+}
+
 .wapper-instagram{
     position: relative;
     
 }
 
 .wapper-instagram :nth-child(2){
-
     position: absolute;
     left: 9.4rem;
     top: 6.1rem;
-    border: 1px solid black;
+    
 }
 
 .container-rigth{
     margin-top: 2.2rem;
-    width: 51vh;
+    width: 21rem;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -97,7 +122,7 @@
     position: absolute;
     content: "";
     height: 1px;
-    width: 6.2rem;
+    width: 6.5rem;
     bottom: 50%;
     background-color: rgba(0,0,0, 0.2);
     left: 2.4rem;
@@ -107,7 +132,7 @@
 .alternative span::after{
     position: absolute;
     content: "";
-    width: 6.2rem;
+    width: 6.5rem;
     height: 1px;
     background-color: rgba(0,0,0, 0.2);
     right: 2.4rem;
