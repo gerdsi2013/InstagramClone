@@ -5,7 +5,6 @@
     border: 0;
 }
 
-
 .container-main{
     margin:0px;
     padding-top: 3vh;
@@ -16,29 +15,31 @@
     background-color: #f7f3f3;
 }
 
-
 /*estilizando o slide*/
 
 .slide-carrosel{
     width: 53%;
     height: 69%;
-    border: 1px solid black;
-    animation: slide 10s infinite;
-    animation-direction:  alternate;
+    border: 0.062rem solid black;
+    animation: slide 15s infinite;
+    animation-direction: alternate;
 }
 
 @keyframes slide {
-    0% , 20%{
+    0% , 15%{
       background-image: url(/img/photo1.jpg);
     }
-    25% ,50%{
+    20% ,35%{
      background-image: url(/img/photo2.jpg);
     }
-    55% , 75%{
+    40% , 55%{
     background-image: url(/img/photo3.jpg);
     }
-    80% , 100%{
+    60% , 75%{
         background-image: url(/img/photo4.jpg);
+    }
+    80% , 100%{
+        background-image: url(/img/photo5.jpg);
     }
 }
 
@@ -46,12 +47,10 @@
     position: relative;
     
 }
-
 .wapper-instagram :nth-child(2){
     position: absolute;
     left: 9.4rem;
-    top: 6.1rem;
-    
+    top: 6.1rem;   
 }
 
 .container-rigth{
@@ -61,13 +60,11 @@
     flex-direction: column;
     position: relative;
     right: 1em;
-    
-    
+    background-color: #fff;
 }
 .container-child-rigth{
     border: 1px #ccc solid;
 }
-
 .instagram{
     display: flex;
     justify-content: center;
@@ -86,6 +83,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    background-color: #fff;
 
 }
  .campo{
@@ -99,8 +97,7 @@
      border:1px solid #ccc;
     font-size: 72%; 
     color: black;
-    outline: none;
-  
+    outline: none;  
 }
 
 .alternative{
@@ -139,18 +136,18 @@
     bottom: 50%;
 
 }
-
 /*btn entrar*/
 .btn-entrar{
     margin-top: 0.8em;
     padding: 0rem 2rem;
     color: #fff;
-    background-color:rgb(166, 234,247) ;
+    background-color:rgb(87, 152, 238) ;
     width: 100%;
     height: 2rem;
     text-transform: capitalize;
     font-family: Arial, Helvetica, sans-serif;
-    border: 1px solid rgb(166,234,247);
+    border-radius: 3px;
+    
 }
 .paragrafo > p{
     text-align: center;
@@ -166,7 +163,6 @@
     color:#073674 ;
     font-size: 85%;
 }
-
 .p-entrar-facebook:nth-child(1){
     color:#073674;
 }
@@ -179,8 +175,7 @@ margin-bottom: 1rem;
   text-decoration: none;
   font-size: 70%;
   margin-bottom: 40em;
-    color:#073674;
-    
+    color:#073674;    
 }
 
 .p-cadastrar{
@@ -202,8 +197,7 @@ margin-bottom: 1rem;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 0.9em;
-    color: rgba(0,0,0, 0.8);
-    
+    color: rgba(0,0,0, 0.8);   
 }
 .btn-main{
     display: flex;
@@ -224,7 +218,7 @@ margin-bottom: 1rem;
 .rodape{
     background-color: #f7f3f3;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 72%;
+    font-size:0.70rem;
     padding: 2%;
     text-transform: capitalize;
 }
@@ -237,12 +231,12 @@ list-style-type: none;
 .lista ul li a{
 text-decoration: none;
 color: rgb(168, 161, 161);
-padding: 0px 10px;
+padding: 0rem 0.625rem;
 
 }
 
 .sub-lista{
-    margin: 5px;
+    margin:0.312rem;
 }
 .sub-lista ul{
     display: flex;
@@ -251,8 +245,7 @@ padding: 0px 10px;
 }
 .sub-lista ul li a{
     text-decoration: none;
-    color: rgb(168, 161, 161);
-    padding: 0px 10px;
+    padding: 0rem 0.625rem;
 }
 
 .paragrafo-rodape{
@@ -264,22 +257,32 @@ padding: 0px 10px;
 .paragrafo-rodape p a{
     text-decoration: none;
     color: rgb(168, 161, 161);
-    padding: 0px 10px;
+    padding: 0rem 0.625rem;
+}
+.select{
+    color: rgb(168, 161, 161);
+    background-color: transparent;
+    outline: none;
+    font-size: 0.70rem;
+}
+.select option{
+    color: black;
+    padding: 0;
+    margin: 0;
 }
 
 /*media queres*/
-
-
-@media screen and (max-width: 800px) {
-    .rodape{
-        font-size: 65%;
-
-    }
+@media screen and (max-width:875px){
 
     .container-left{
         display: none;
     }
+}
 
+@media screen and (max-width: 800px) {
+    .rodape{
+        font-size: 65%;
+    }
     .container-main{
         padding-left: 1rem;
     }
@@ -301,23 +304,19 @@ padding: 0px 10px;
         
     }
  
-   
 }
 
 @media screen and (max-width:450px) {
 
     .container-child-rigth {
         border:0;
-
     }
     .p-cadastrar{
         border: 0;
     }
-
 }
-
 @media screen  and (max-width:300px){
- 
+
     .btn-main{
         display: flex;
         flex-direction: column;

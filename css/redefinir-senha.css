@@ -6,6 +6,9 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+body{
+    background-color: rgb(247, 241, 241);
+}
 .tolbar{
     width: 100%;
     height: 9vh;
@@ -25,10 +28,12 @@
 
 .container-main{
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    
 }
 
 .container-child{
@@ -39,6 +44,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #fff;
+    
+    
+    
 }
 
 .logo-cadeado{
@@ -66,6 +75,7 @@
     height: 32px;
     border: 2px solid black;
     border-radius: 8px;
+
 }
 .p-texto{
     padding: 0.5rem 2.4rem 0.5rem 2.4rem;
@@ -74,31 +84,35 @@
 .formulario{
     width: 100%;
     padding:0.5rem 2.4rem 0.5rem 2.4rem;    
+    
 }
 
     
 .campo{
     border: 1px #ccc solid;
-    border-radius: 3px;
+    border-radius: 5px;
     outline: none;  
     font-size: 72%;
     width: 100%;
     height: 38px;
     padding-left: 4%;
+
 }
     
 .button{
     margin-top: 1rem;
-    background-color: rgb(166,234, 247);
-    color: bisque;
+    background-color: rgb(159, 213, 235);
+    color: #fff;
     width: 100%;
     height: 2rem;
     padding-left: 4%;
     outline: none;
+    border-radius: 5px;
 }
 
 h3{
     font-size: 0.9rem;
+    
 }
 .p-texto{
 color: rgba(0,0,0, 0.5);
@@ -119,7 +133,7 @@ font-size: 82%;
 
 .alternative span::before{
     content: "";
-    width: 8.2rem;
+    width: 6.5rem;
     height: 1px;
     background-color: #cccc;
     position: absolute;
@@ -129,7 +143,7 @@ font-size: 82%;
 
 .alternative span::after{
  content: "";
- width: 8.2rem;
+ width: 6.5rem;
  height: 1px;
  background-color: #ccc;
  position: absolute;
@@ -151,6 +165,8 @@ h4{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #fff;
+    
 }
 .voltar-login a{
 
@@ -159,13 +175,16 @@ h4{
     color: rgba(0,0,0, 0.8);
     text-decoration: none;
     padding:1rem 0rem; 
+     
     
 }
 .footer{
-    margin: 3rem 0rem
+    margin: 3rem 0rem;
+
 }
 .list-footer{
   display: flex;  
+  
 }
 .list-footer li a {
     font-size: 72%;
@@ -188,11 +207,21 @@ padding: 0rem 0.5rem;
 }
 .p-footer p a{
     text-decoration: none;
-    font-size: 72%;
+    font-size: 0.70rem;
     color:rgb(168,161, 161);
     text-align: center;
 }
 
+.select{
+    color: rgb(168, 161, 161);
+    background-color: transparent;
+    outline: none;
+    font-size: 0.70rem;
+}
+.select option{
+    color: black;
+    padding: 0;
+    margin: 0;
 /*media queres*/
 
 @media screen and (max-width:660px){

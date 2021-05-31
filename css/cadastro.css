@@ -5,11 +5,6 @@
     border: 0;
 }
 
-   
-.container-main{
-   
-}
-
 body{
     max-width: 100%; 
     height: 100%;
@@ -22,16 +17,14 @@ body{
 }
 
 .flex-item{
-
         padding-top: 2%;
         width: 350px;
         height: 100%;
         border: 1px solid #ccc;
         display: flex;
         flex-direction: column;
-        background-color: rgb(245, 243, 243);
-            
-    
+        background-color: #fff;
+                
 }
 
 #paragrafo{
@@ -78,7 +71,6 @@ body{
     margin-bottom: 1rem;
 }
 
-
 .facebook{
     display: flex;
     justify-content: center;  
@@ -111,7 +103,6 @@ body{
     font-size: 0.9rem;
     font-weight: 400;
     text-transform: uppercase;
-
 }
 
 .alternative span::before{
@@ -133,7 +124,7 @@ body{
     bottom: 50%;
     right: 2.5rem;
 }
-.btn-cadastrar{
+.btn-cadastrar{ 
     margin-top: 10px;
     color: #fff;
     background-color: rgb(141, 217, 247);
@@ -154,7 +145,6 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: black;
     outline: none;
-
 }
 
 a{
@@ -163,9 +153,9 @@ color: rgba(0, 0, 0, 0.5);
 
 .p-inferior{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 80%;
+    font-size: 0.7rem;
     text-align: center;
-    margin: 17px 0px 40px;
+    margin: 1.06rem 0rem 2.5rem;
     color: rgb(168, 161, 161);
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -181,6 +171,7 @@ color: rgba(0, 0, 0, 0.5);
       border: 1px solid #ccc;
       display: flex;
       justify-content: center;
+      background-color: #fff;
 }
 
 .p-final p{
@@ -220,20 +211,20 @@ h4{
     flex-direction: column;
     align-items: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 72%;
     padding:2%;
     cursor: pointer;
-    background-color: #f7f3f3;
-    color: rgba(0, 0, 0, 0.5);
+    color: rgb(168, 161, 161);
+    font-size: 0.70rem;
 }
 .lista-rodape{
     display: flex;
-    margin-top: 3rem;
+
 
 }
 
 .rodape ul li {
     list-style: none;
+    margin-bottom: 1rem;
 }
 .lista-rodape li a{    
 text-decoration: none;
@@ -252,7 +243,29 @@ padding:0 0.5rem ;
 .sub-lista-rodape li{
     margin-top: 1rem;
 }
-/*media queris*/
+.footer-select{
+    display: flex;
+    flex-direction: row;
+
+}
+.footer-select p a{
+    text-decoration: none;
+    padding-left: 1rem;
+}
+.select{
+    color: rgb(168, 161, 161);
+    background-color: transparent;
+    outline: none;
+    font-size: 0.70rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+.select option{
+    color: black;
+
+    
+}
+/*media queries*/
 
 @media screen and (max-width:720px){
     
