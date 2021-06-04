@@ -101,10 +101,11 @@ body{
     height: 2.5rem;
     border-radius: 5px;
     margin-bottom: 0.4rem;
-    border: 1px solid rgb(221, 220, 220);
-    font-size: 0.9rem;
+    background-color: rgb(250, 244, 244);
+    font-size: 0.8rem;
     padding-left: 0.4rem;
-    outline: none;
+    border: 1px solid rgb(221, 220, 220);
+
     
 }
 
@@ -119,6 +120,7 @@ body{
     color: #fff;
     background-color: rgb(167, 223, 245);
     border: 1px solid  rgb(167, 223, 245);
+    cursor: pointer;
       
 }
 .ou{
@@ -132,7 +134,7 @@ body{
     content:"";
     width: 6.2rem;
     height: 0.02rem;
-    background-color: rgb(221, 220, 220);;
+    background-color: rgba(0, 0, 0, 0.2);
     position: absolute;
     bottom: 50%;
     left: 2.4rem;
@@ -141,7 +143,7 @@ body{
     content: "";
     width: 6.2rem;
     height: 0.02rem;
-    background-color: rgb(221, 220, 220);
+    background-color: rgba(0, 0, 0, 0.2);
     position: absolute;
     bottom: 50%;
     right: 2.4rem;
@@ -164,25 +166,25 @@ body{
     padding: 0.09rem;
 }
 .enter-facebook a{
-    text-decoration: none;    
-}
-.enter-facebook a{
+    text-decoration: none;
     color: rgb(16, 48, 119);
+
+}
+.enter-child{
     font-weight: bold;
 }
+
 .enter-password{
     margin-top: 1.2rem;
 }
-.enter-pasaword a{
-  font-size: 80%;
-  color: rgb(16, 48, 119);
-  
+.enter-password a{
+    font-size: 0.7rem;
 }
 
 .cont{
     width: 350px;
     max-width: 100%;
-    border: 1px solid  rgb(221, 220, 220);;
+    border: 1px solid  rgb(221, 220, 220);
     text-align: center;
     padding: 1.5rem;
     margin-top: 0.8rem;
@@ -217,6 +219,7 @@ body{
     display: flex;
     justify-content: center;
     border: 1px solid white;
+    cursor: pointer;
 
 
 }

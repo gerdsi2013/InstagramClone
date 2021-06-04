@@ -3,15 +3,15 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;  
 }
 
 body{
-    background-color: rgb(247, 241, 241);
+    background-color: rgb(250, 244, 244);
 }
 .tolbar{
     width: 100%;
-    height: 9vh;
+    height: 3rem;
     background-color: #ffff;   
     display: flex;
     border-bottom:1px#ccc solid;
@@ -27,7 +27,7 @@ body{
 }
 
 .container-main{
-    width: 100vw;
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -37,10 +37,11 @@ body{
 }
 
 .container-child{
-    width: 350px;
+    width: 380px;
+    max-width: 100%;
     height: 100%;
-    margin-top:7rem;
-    border: solid #ccc 1px;
+    margin-top:6rem;
+    border: 1px solid  rgb(221, 220, 220);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -89,13 +90,14 @@ body{
 
     
 .campo{
-    border: 1px #ccc solid;
+    background-color: rgb(250, 244, 244);
+    border: 1px solid rgb(221, 220, 220);
     border-radius: 5px;
-    outline: none;  
-    font-size: 72%;
+    font-size: 0.8rem;
     width: 100%;
-    height: 38px;
-    padding-left: 4%;
+    height: 2.4rem;
+    padding-left: 0.4rem;
+    
 
 }
     
@@ -125,8 +127,7 @@ font-size: 82%;
     position: relative;
 }
 .alternative span{
-  font-weight: 400;
-  font-size: 80%;
+  font-size:0.7rem;
   color: rgba(0,0,0, 0.5);
  
 }
@@ -135,7 +136,7 @@ font-size: 82%;
     content: "";
     width: 6.5rem;
     height: 1px;
-    background-color: #cccc;
+    background-color: rgba(0, 0, 0, 0.2);
     position: absolute;
     left: 2rem;
     bottom: 50%;
@@ -145,27 +146,34 @@ font-size: 82%;
  content: "";
  width: 6.5rem;
  height: 1px;
- background-color: #ccc;
+ background-color: rgba(0, 0, 0, 0.2);
  position: absolute;
  right: 2rem;
  bottom: 50%;
 }
+
 h4{
-    font-size: 82%;
-    color: rgba(0,0,0, 0.8);
-    margin-bottom: 4rem;
-    cursor: pointer;
+    margin-bottom: 6rem;
 }
 
+h4 a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: rgba(0,0,0, 0.8);
+    
+}
 
 .voltar-login{
-    width: 350px;
+    width: 380px;
+    max-width: 100%;
     margin-bottom: 1rem;
     border: 1px #ccc solid;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #fff;
+    border: 1px solid rgb(221, 220, 220);
     
 }
 .voltar-login a{
@@ -174,16 +182,19 @@ h4{
     font-weight: bold;
     color: rgba(0,0,0, 0.8);
     text-decoration: none;
-    padding:1rem 0rem; 
+    padding:0.8rem 0rem; 
      
     
 }
 .footer{
     margin: 3rem 0rem;
+    padding: 0rem 1rem;
 
 }
 .list-footer{
-  display: flex;  
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: space-around; 
   
 }
 .list-footer li a {
@@ -196,7 +207,7 @@ padding: 0rem 0.5rem;
     list-style: none;
 }
 .p-footer{
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
