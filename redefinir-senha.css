@@ -1,0 +1,252 @@
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;  
+}
+
+body{
+    background-color: rgb(250, 244, 244);
+}
+.tolbar{
+    width: 100%;
+    height: 3rem;
+    background-color: #ffff;   
+    display: flex;
+    border-bottom:1px#ccc solid;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    
+}
+.tolbar img {
+    width: 6.5rem;
+    height:2rem;
+    margin-left: 15%;  
+}
+
+.container-main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.container-child{
+    width: 380px;
+    max-width: 100%;
+    height: 100%;
+    margin-top:6rem;
+    border: 1px solid  rgb(221, 220, 220);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    
+    
+    
+}
+
+.logo-cadeado{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin:1rem 0rem 1rem;
+    width: 100px;
+    height: 100px;
+    border: 2px black solid;
+    border-radius: 50%;   
+}
+.meia-lua{
+    width: 28px;
+    height: 20px;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-radius: 50% 50% 0% 0% ;
+    font-weight: bold;
+}
+.quadrado{
+    width: 45px;
+    height: 32px;
+    border: 2px solid black;
+    border-radius: 8px;
+
+}
+.p-texto{
+    padding: 0.5rem 2.4rem 0.5rem 2.4rem;
+    text-align: center;
+}
+.formulario{
+    width: 100%;
+    padding:0.5rem 2.4rem 0.5rem 2.4rem;    
+    
+}
+
+    
+.campo{
+    background-color: rgb(250, 244, 244);
+    border: 1px solid rgb(221, 220, 220);
+    border-radius: 5px;
+    font-size: 0.8rem;
+    width: 100%;
+    height: 2.4rem;
+    padding-left: 0.4rem;
+    
+
+}
+    
+.button{
+    margin-top: 1rem;
+    background-color: rgb(159, 213, 235);
+    color: #fff;
+    width: 100%;
+    height: 2rem;
+    padding-left: 4%;
+    outline: none;
+    border-radius: 5px;
+}
+
+h3{
+    font-size: 0.9rem;
+    
+}
+.p-texto{
+color: rgba(0,0,0, 0.5);
+font-size: 82%;
+
+
+}
+.alternative{
+    margin: 1rem 0rem;
+    position: relative;
+}
+.alternative span{
+  font-size:0.7rem;
+  color: rgba(0,0,0, 0.5);
+ 
+}
+
+.alternative span::before{
+    content: "";
+    width: 6.5rem;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    left: 2rem;
+    bottom: 50%;
+}
+
+.alternative span::after{
+ content: "";
+ width: 6.5rem;
+ height: 1px;
+ background-color: rgba(0, 0, 0, 0.2);
+ position: absolute;
+ right: 2rem;
+ bottom: 50%;
+}
+
+h4{
+    margin-bottom: 6rem;
+}
+
+h4 a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: rgba(0,0,0, 0.8);
+    
+}
+
+.voltar-login{
+    width: 380px;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    border: 1px #ccc solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(221, 220, 220);
+    
+}
+.voltar-login a{
+
+    font-size: 82%;
+    font-weight: bold;
+    color: rgba(0,0,0, 0.8);
+    text-decoration: none;
+    padding:0.8rem 0rem; 
+     
+    
+}
+.footer{
+    margin: 3rem 0rem;
+    padding: 0rem 1rem;
+
+}
+.list-footer{
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: space-around; 
+  
+}
+.list-footer li a {
+    font-size: 72%;
+text-decoration: none;
+color: rgb(168,161, 161);
+padding: 0rem 0.5rem;
+}
+.footer ul li {
+    list-style: none;
+}
+.p-footer{
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.p-footer p{
+    list-style: none;
+    padding: 0.5rem;
+}
+.p-footer p a{
+    text-decoration: none;
+    font-size: 0.70rem;
+    color:rgb(168,161, 161);
+    text-align: center;
+}
+
+.select{
+    color: rgb(168, 161, 161);
+    background-color: transparent;
+    outline: none;
+    font-size: 0.70rem;
+}
+.select option{
+    color: black;
+    padding: 0;
+    margin: 0;
+/*media queres*/
+
+@media screen and (max-width:660px){
+    .footer ul{
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: center;
+        
+    }
+
+}
+
+@media  screen and(max-width:340px) {
+    .p-footer {
+        font-size: 62%;
+    }
+}
